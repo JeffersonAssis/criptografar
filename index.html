@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Desafio Alura</title>
+</head>
+<body>
+  <main class="container">
+    <header class="logo">
+      <img src="assets/logo.svg" alt="Logo da Alura" >  
+    </header>
+    <section class="caixa__texto">
+        
+      <input type="text" id="texto" class="texto" placeholder="Digite seu texto"/>
+      
+      <div>
+      <p><img src="/assets/Vector.svg" alt="Sinal de Alerta!"> Apenas letras minúsculas e sem acento.</p>
+      
+      <button class="button_primario" onclick="criptografar()">Criptografar</button>
+      <button class="button_segundario" onclick="descriptografar()">Descriptografar</button>
+    </div>
+    </section>
+    <section class="caixa__resultado">
+    <div  id="textoVazio" class="texto__vazio">
+        <img src="/assets/bonecolupa.svg" alt="Boneco com lupa">
+        <h2>Nenhuma mensagem encontrada</h2>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <div id="textoInfo" class="texto__info">
+        <input type="text" id="resultado" class="resultado">
+        <button class="button_segundario button_copiar" onclick="copiarTexto()">Copiar</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
